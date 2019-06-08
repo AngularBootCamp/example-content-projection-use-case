@@ -4,11 +4,12 @@ import { Component, Directive } from '@angular/core';
   selector: 'announcement-card',
   templateUrl: './announcement.html'
 })
-export class AnnouncementComponent { }
+export class AnnouncementComponent {}
 
 @Directive({
   // Having incorporated the CUSTOM_ELEMENTS_SCHEMA allows for full customization of the selector tags
-  // tslint:disable-next-line:directive-selector
-  selector: 'announcement-title, announcement-image, announcement-description'
+  // tslint:disable:directive-selector
+  selector:
+    'announcement-title, announcement-image, announcement-description'
 })
-export class AnnouncementComponentTagsDirective { }
+export class AnnouncementComponentTagsDirective {}

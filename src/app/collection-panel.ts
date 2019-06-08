@@ -4,11 +4,11 @@ import { Component, Directive } from '@angular/core';
   selector: 'collection-panel',
   templateUrl: './collection-panel.html'
 })
-export class CollectionPanelComponent { }
+export class CollectionPanelComponent {}
 
 @Directive({
   // These are the base selector tags that can be used without incorporating a different Schema.
   // tslint:disable-next-line:directive-selector
   selector: 'header, content, footer'
 })
-export class CollectionPanelComponentTagsDirective { }
+export class CollectionPanelComponentTagsDirective {}

@@ -2,8 +2,14 @@ import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AnnouncementComponent, AnnouncementComponentTagsDirective } from './announcement';
-import { CollectionPanelComponent, CollectionPanelComponentTagsDirective } from './collection-panel';
+import {
+  AnnouncementComponent,
+  AnnouncementComponentTagsDirective
+} from './announcement';
+import {
+  CollectionPanelComponent,
+  CollectionPanelComponentTagsDirective
+} from './collection-panel';
 import { NewsComponent } from './news';
 
 @NgModule({
@@ -18,4 +24,4 @@ import { NewsComponent } from './news';
   bootstrap: [NewsComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class AppModule {}
