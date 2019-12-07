@@ -22,7 +22,7 @@ export class NewsComponent {
     for (let x = 0; x < 6; x++) {
       this.announcements.push({
         title: 'Announcement: ' + (x + 1),
-        image: './stock-photos/image' + ((x % 2) + 1) + '.jpg',
+        image: './assets/image' + ((x % 2) + 1) + '.jpg',
         description: this.descriptions[x % 3]
       });
     }
