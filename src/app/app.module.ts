@@ -14,11 +14,11 @@ import { NewsComponent } from './news';
 
 @NgModule({
   declarations: [
-    NewsComponent,
+    AnnouncementComponent,
+    AnnouncementComponentTagsDirective,
     CollectionPanelComponent,
     CollectionPanelComponentTagsDirective,
-    AnnouncementComponent,
-    AnnouncementComponentTagsDirective
+    NewsComponent
   ],
   imports: [BrowserModule, FormsModule],
   bootstrap: [NewsComponent],

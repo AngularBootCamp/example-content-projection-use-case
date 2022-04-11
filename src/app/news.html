@@ -2,13 +2,13 @@
   <header>New Announcements</header>
   <content class="two-across">
     <announcement-card
-      style="cursor: pointer;"
+      style="cursor: pointer"
       *ngFor="let item of announcements"
     >
       <announcement-title>{{ item.title }}</announcement-title>
       <announcement-image>
         <img
-          style="margin-bottom: 5%;"
+          style="margin-bottom: 5%"
           [src]="item.image"
           alt="Announcement Image"
         />
