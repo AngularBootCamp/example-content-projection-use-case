@@ -6,22 +6,22 @@ import {
   AnnouncementComponent,
   AnnouncementComponentTagsDirective
 } from './announcement';
+import { AppComponent } from './app.component';
 import {
   CollectionPanelComponent,
   CollectionPanelComponentTagsDirective
 } from './collection-panel';
-import { NewsComponent } from './news';
 
 @NgModule({
   declarations: [
     AnnouncementComponent,
     AnnouncementComponentTagsDirective,
+    AppComponent,
     CollectionPanelComponent,
-    CollectionPanelComponentTagsDirective,
-    NewsComponent
+    CollectionPanelComponentTagsDirective
   ],
   imports: [BrowserModule, FormsModule],
-  bootstrap: [NewsComponent],
+  bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule {}

@@ -8,9 +8,9 @@ export interface IAnnouncement {
 
 @Component({
   selector: 'app-root',
-  templateUrl: './news.html'
+  templateUrl: './app.component.html'
 })
-export class NewsComponent {
+export class AppComponent {
   announcements: IAnnouncement[] = [];
   descriptions: string[] = [
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales velit leo, id vestibulum risus maximus eget.',
