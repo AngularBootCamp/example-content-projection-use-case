@@ -4,21 +4,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import {
   AnnouncementComponent,
-  AnnouncementComponentTagsDirective
-} from './announcement';
+  AnnouncementComponentChildrenComponent
+} from './announcement.component';
 import { AppComponent } from './app.component';
 import {
-  CollectionPanelComponent,
-  CollectionPanelComponentTagsDirective
-} from './collection-panel';
+  CollectionPanelChildrenComponent,
+  CollectionPanelComponent
+} from './collection-panel.component';
 
 @NgModule({
   declarations: [
     AnnouncementComponent,
-    AnnouncementComponentTagsDirective,
+    AnnouncementComponentChildrenComponent,
     AppComponent,
     CollectionPanelComponent,
-    CollectionPanelComponentTagsDirective
+    CollectionPanelChildrenComponent
   ],
   imports: [BrowserModule, FormsModule],
   bootstrap: [AppComponent],

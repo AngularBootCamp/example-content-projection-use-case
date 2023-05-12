@@ -1,24 +1,23 @@
-<collection-panel>
-  <header>New Announcements</header>
-  <content class="two-across">
-    <announcement-card
-      style="cursor: pointer"
-      *ngFor="let item of announcements"
-    >
-      <announcement-title>{{ item.title }}</announcement-title>
-      <announcement-image>
-        <img
-          style="margin-bottom: 5%"
-          [src]="item.image"
-          alt="Announcement Image"
-        />
-      </announcement-image>
+<app-collection-panel>
+  <app-collection-panel-header>
+    New Announcements
+  </app-collection-panel-header>
+  <app-collection-panel-content>
+    <app-announcement-card *ngFor="let item of announcements">
+      <app-announcement-title>
+        {{ item.title }}
+      </app-announcement-title>
+      <app-announcement-image>
+        <img [src]="item.image" alt="Announcement Image" />
+      </app-announcement-image>
 
       <announcement-description>
         {{ item.description }}
       </announcement-description>
-    </announcement-card>
-  </content>
+    </app-announcement-card>
+  </app-collection-panel-content>
 
-  <footer>Come Back For New Announcements Everyday!</footer>
-</collection-panel>
+  <app-collection-panel-footer>
+    Come Back For New Announcements Everyday!
+  </app-collection-panel-footer>
+</app-collection-panel>
