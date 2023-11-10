@@ -1,4 +1,14 @@
+import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+
+import {
+  AnnouncementComponent,
+  AnnouncementComponentChildrenComponent
+} from './announcement.component';
+import {
+  CollectionPanelComponent,
+  CollectionPanelChildrenComponent
+} from './collection-panel.component';
 
 export interface IAnnouncement {
   title: string;
@@ -9,7 +19,15 @@ export interface IAnnouncement {
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  standalone: true,
+  imports: [
+    CollectionPanelComponent,
+    CollectionPanelChildrenComponent,
+    NgFor,
+    AnnouncementComponent,
+    AnnouncementComponentChildrenComponent
+  ]
 })
 export class AppComponent {
   announcements: IAnnouncement[] = [];
