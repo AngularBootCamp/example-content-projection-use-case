@@ -1,4 +1,3 @@
-import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 
 import {
@@ -24,7 +23,6 @@ export interface IAnnouncement {
   imports: [
     CollectionPanelComponent,
     CollectionPanelChildrenComponent,
-    NgFor,
     AnnouncementComponent,
     AnnouncementComponentChildrenComponent
   ]

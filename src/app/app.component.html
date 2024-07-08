@@ -3,18 +3,19 @@
     New Announcements
   </app-collection-panel-header>
   <app-collection-panel-content>
-    <app-announcement-card *ngFor="let item of announcements">
-      <app-announcement-title>
-        {{ item.title }}
-      </app-announcement-title>
-      <app-announcement-image>
-        <img [src]="item.image" alt="Announcement Image" />
-      </app-announcement-image>
-
-      <app-announcement-description>
-        {{ item.description }}
-      </app-announcement-description>
-    </app-announcement-card>
+    @for (item of announcements; track item) {
+      <app-announcement-card>
+        <app-announcement-title>
+          {{ item.title }}
+        </app-announcement-title>
+        <app-announcement-image>
+          <img [src]="item.image" alt="Announcement Image" />
+        </app-announcement-image>
+        <app-announcement-description>
+          {{ item.description }}
+        </app-announcement-description>
+      </app-announcement-card>
+    }
   </app-collection-panel-content>
 
   <app-collection-panel-footer>
